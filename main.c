@@ -18,12 +18,14 @@ for ( i = 1; i < argc; ++i ) {
    preOrder( rootPtr );*/
 
    // traverse the tree inOrder
-   printf("\nThe inOrder traversal is:\n" );
-   inOrder( b.root );
-/*
-   // traverse the tree postOrder
- printf("\nThe postnOrder traversal is:\n" );   postOrder( rootPtr );
-*/
-    printf("\n");
+   printf("\nThe PostOrder traversal is:\n" );
+   postOrder( b.root );
+   // printf("\nThe inOrder traversal is:\n" );
+   // inOrder( b.root );
+   printf("\nThe preOrder traversal is:\n" );
+   preOrder( b.root );
+
+   printf("\nTree structure :\n");
+   Tree(b.root,0);
 } // end main
 
