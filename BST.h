@@ -70,7 +70,7 @@ while(!inserted){
   
 void preOrder(TreeNodePtr treePtr) {
    if (treePtr!= NULL) {
-       printf("%3d ", treePtr->data);     
+       printf("%3d", treePtr->data);     
        preOrder(treePtr->leftPtr);  
        preOrder(treePtr->rightPtr);
    }
@@ -80,7 +80,7 @@ void postOrder(TreeNodePtr treePtr) {
    if (treePtr!= NULL) {
        postOrder(treePtr->leftPtr);
        postOrder(treePtr->rightPtr);     
-       printf("%3d ", treePtr->data);  
+       printf("%3d", treePtr->data);  
    }
 }
 
@@ -99,7 +99,6 @@ void Tree(TreeNodePtr treePtr, int space) {
 
    space += 3;
    Tree(treePtr->rightPtr, space);
-   printf("\n");
    for (int i = 3; i < space; i++)
        printf(" ");
    printf("%3d\n", treePtr->data);
